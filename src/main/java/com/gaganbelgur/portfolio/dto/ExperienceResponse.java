@@ -1,6 +1,6 @@
 package com.gaganbelgur.portfolio.dto;
 
-public record ProfileResponse(String name, String role, String duration, String summary) {
+public record ExperienceResponse(String name, String role, String duration, String summary) {
     @Override
     public String name() {
         return name;
