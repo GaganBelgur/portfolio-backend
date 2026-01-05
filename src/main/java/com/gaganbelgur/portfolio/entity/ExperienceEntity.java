@@ -3,7 +3,7 @@ package com.gaganbelgur.portfolio.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "profile")
+@Table(name = "experience")
 public class ExperienceEntity {
 
     @Id
@@ -15,6 +15,8 @@ public class ExperienceEntity {
 
     private String duration;
 
+    @Lob
+    @Column(columnDefinition = "TEXT")
     private String summary;
 
     public String getName() {
@@ -48,4 +50,5 @@ public class ExperienceEntity {
     public void setSummary(String summary) {
         this.summary = summary;
     }
+
 }

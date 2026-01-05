@@ -3,6 +3,8 @@ package com.gaganbelgur.portfolio.repository;
 import com.gaganbelgur.portfolio.entity.ExperienceEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 public interface ExperienceRepository extends JpaRepository<ExperienceEntity, Long> {
-    ExperienceEntity findTopByOrderByIdAsc();
+    List<ExperienceEntity> findTopByOrderByIdAsc();
 }

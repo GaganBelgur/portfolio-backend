@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/experience")
 public class ExperienceController {
@@ -17,8 +19,7 @@ public class ExperienceController {
     }
 
     @GetMapping
-    public ExperienceResponse getProfile() {
-        return experienceService.getProfile();
+    public List<ExperienceResponse> getExperiences() {
+        return experienceService.getExperiences();
     }
-
 }

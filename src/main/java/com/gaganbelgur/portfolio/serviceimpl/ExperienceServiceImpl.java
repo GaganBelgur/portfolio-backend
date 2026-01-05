@@ -6,6 +6,9 @@ import com.gaganbelgur.portfolio.repository.ExperienceRepository;
 import com.gaganbelgur.portfolio.service.ExperienceService;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class ExperienceServiceImpl implements ExperienceService {
 
@@ -16,16 +19,21 @@ public class ExperienceServiceImpl implements ExperienceService {
     }
 
     @Override
-    public ExperienceResponse getProfile() {
-        ExperienceEntity experienceEntity = experienceRepository.findTopByOrderByIdAsc();
-        if (experienceEntity != null) {
-            return new ExperienceResponse(
+    public List<ExperienceResponse> getExperiences() {
+        List<ExperienceEntity> experiences = experienceRepository.findTopByOrderByIdAsc();
+
+        List<ExperienceResponse> responses = new ArrayList<>();
+
+        experiences.forEach(experienceEntity -> {
+            ExperienceResponse response = new ExperienceResponse(
                     experienceEntity.getName(),
                     experienceEntity.getRole(),
                     experienceEntity.getDuration(),
                     experienceEntity.getSummary()
             );
-        }
-        return null;
+            responses.add(response);
+        });
+
+        return responses;
     }
 }
