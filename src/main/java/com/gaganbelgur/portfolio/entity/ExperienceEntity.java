@@ -23,32 +23,16 @@ public class ExperienceEntity {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getRole() {
         return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
     }
 
     public String getDuration() {
         return duration;
     }
 
-    public void setDuration(String duration) {
-        this.duration = duration;
-    }
-
     public String getSummary() {
         return summary;
-    }
-
-    public void setSummary(String summary) {
-        this.summary = summary;
     }
 
 }
