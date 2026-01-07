@@ -20,7 +20,7 @@ public class ExperienceServiceImpl implements ExperienceService {
 
     @Override
     public List<ExperienceResponse> getExperiences() {
-        List<ExperienceEntity> experiences = experienceRepository.findTopByOrderByIdAsc();
+        List<ExperienceEntity> experiences = experienceRepository.findAll();
 
         List<ExperienceResponse> responses = new ArrayList<>();
 

@@ -15,7 +15,6 @@ public class ExperienceEntity {
 
     private String duration;
 
-    @Lob
     @Column(columnDefinition = "TEXT")
     private String summary;
 
