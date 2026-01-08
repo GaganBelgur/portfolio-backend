@@ -34,4 +34,19 @@ public class ExperienceEntity {
         return summary;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
 }

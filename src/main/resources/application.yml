@@ -3,6 +3,10 @@ spring:
     url: jdbc:postgresql://localhost:5432/portfolio_db
     username: portfolio_user
     password: portfolio_pass
+  security:
+    user:
+      name: admin
+      password: admin42026$
 
   jpa:
     hibernate:

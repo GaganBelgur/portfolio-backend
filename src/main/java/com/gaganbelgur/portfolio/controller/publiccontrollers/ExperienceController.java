@@ -1,6 +1,6 @@
-package com.gaganbelgur.portfolio.controller;
+package com.gaganbelgur.portfolio.controller.publiccontrollers;
 
-import com.gaganbelgur.portfolio.dto.ExperienceResponse;
+import com.gaganbelgur.portfolio.dto.experience.ExperienceResponse;
 import com.gaganbelgur.portfolio.service.ExperienceService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
