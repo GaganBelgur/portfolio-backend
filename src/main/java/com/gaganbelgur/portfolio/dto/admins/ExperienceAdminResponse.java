@@ -1,4 +1,4 @@
-package com.gaganbelgur.portfolio.dto.admins.experience;
+package com.gaganbelgur.portfolio.dto.admins;
 
 public record ExperienceAdminResponse(long id, String name, String role, String duration, String summary) {
     @Override

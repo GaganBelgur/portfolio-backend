@@ -1,4 +1,4 @@
-package com.gaganbelgur.portfolio.dto.publics.project;
+package com.gaganbelgur.portfolio.dto.publics;
 
 import java.util.Set;
 

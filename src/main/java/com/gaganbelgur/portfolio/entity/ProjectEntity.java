@@ -20,7 +20,9 @@ public class ProjectEntity {
 
     private String companyTags;
 
-    // Getters and Setters
+    public Long getId() {
+        return id;
+    }
 
     public String getName() {
         return name;
@@ -36,5 +38,21 @@ public class ProjectEntity {
 
     public String getCompanyTags() {
         return companyTags;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setTechTags(Set<String> techTags) {
+        this.techTags = techTags;
+    }
+
+    public void setCompanyTags(String companyTags) {
+        this.companyTags = companyTags;
     }
 }

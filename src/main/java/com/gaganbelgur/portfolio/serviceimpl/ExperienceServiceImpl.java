@@ -1,8 +1,8 @@
 package com.gaganbelgur.portfolio.serviceimpl;
 
-import com.gaganbelgur.portfolio.dto.admins.experience.ExperienceAdminResponse;
-import com.gaganbelgur.portfolio.dto.publics.experience.ExperienceRequest;
-import com.gaganbelgur.portfolio.dto.publics.experience.ExperienceResponse;
+import com.gaganbelgur.portfolio.dto.admins.ExperienceAdminResponse;
+import com.gaganbelgur.portfolio.dto.publics.ExperienceRequest;
+import com.gaganbelgur.portfolio.dto.publics.ExperienceResponse;
 import com.gaganbelgur.portfolio.entity.ExperienceEntity;
 import com.gaganbelgur.portfolio.repository.ExperienceRepository;
 import com.gaganbelgur.portfolio.service.ExperienceService;
@@ -59,12 +59,7 @@ public class ExperienceServiceImpl implements ExperienceService {
 
     @Override
     public ExperienceAdminResponse updateExperience(Long id, ExperienceRequest request) {
-        Optional<ExperienceEntity> entity = experienceRepository.findById(id);
-        if(entity.isEmpty()) {
-            throw new RuntimeException("Experience not found");
-        }
-
-        ExperienceEntity experienceEntity = entity.get();
+        ExperienceEntity experienceEntity = experienceRepository.findById(id).orElseThrow();
         updateEntityFromRequest(experienceEntity, request);
         experienceRepository.save(experienceEntity);
         return mapAdmin(experienceEntity);
