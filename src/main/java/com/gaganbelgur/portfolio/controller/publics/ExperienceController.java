@@ -1,4 +1,4 @@
-package com.gaganbelgur.portfolio.controller.publiccontrollers;
+package com.gaganbelgur.portfolio.controller.publics;
 
 import com.gaganbelgur.portfolio.dto.publics.experience.ExperienceResponse;
 import com.gaganbelgur.portfolio.service.ExperienceService;

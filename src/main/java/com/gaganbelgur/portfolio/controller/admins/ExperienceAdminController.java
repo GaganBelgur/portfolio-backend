@@ -1,4 +1,4 @@
-package com.gaganbelgur.portfolio.controller.admincontrollers;
+package com.gaganbelgur.portfolio.controller.admins;
 
 import com.gaganbelgur.portfolio.dto.admins.experience.ExperienceAdminResponse;
 import com.gaganbelgur.portfolio.dto.publics.experience.ExperienceRequest;
