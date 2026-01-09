@@ -2,7 +2,7 @@ package com.gaganbelgur.portfolio.dto.admins;
 
 import java.util.Set;
 
-public record ProjectAdminResponse(long id, String name, String description, Set<String> techTags, String companyTags) {
+public record ProjectAdminResponse(long id, String name, String description, String[] techTags, String companyTags) {
 
     @Override
     public long id() {
@@ -20,7 +20,7 @@ public record ProjectAdminResponse(long id, String name, String description, Set
     }
 
     @Override
-    public Set<String> techTags() {
+    public String[] techTags() {
         return techTags;
     }
 

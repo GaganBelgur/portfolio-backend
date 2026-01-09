@@ -18,7 +18,11 @@ public class ProjectEntity {
     @Column(columnDefinition = "TEXT")
     private String description;
 
-    private Set<String> techTags;
+    @Column(
+            name = "tech_tags",
+            columnDefinition = "TEXT[]"
+    )
+    private String[] techTags;
 
     private String companyTags;
 
@@ -34,7 +38,7 @@ public class ProjectEntity {
         return description;
     }
 
-    public Set<String> getTechTags() {
+    public String[] getTechTags() {
         return techTags;
     }
 
@@ -50,7 +54,7 @@ public class ProjectEntity {
         this.description = description;
     }
 
-    public void setTechTags(Set<String> techTags) {
+    public void setTechTags(String[] techTags) {
         this.techTags = techTags;
     }
 

@@ -75,6 +75,18 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>9.22.3</version>
+                <configuration>
+                    <url>jdbc:postgresql://localhost:5432/portfolio_db</url>
+                    <user>portfolio_user</user>
+                    <password>portfolio_pass</password>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 

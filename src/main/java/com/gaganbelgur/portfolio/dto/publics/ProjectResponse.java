@@ -2,7 +2,7 @@ package com.gaganbelgur.portfolio.dto.publics;
 
 import java.util.Set;
 
-public record ProjectResponse(String name, String description, Set<String> techTags, String companyTags) {
+public record ProjectResponse(String name, String description, String[] techTags, String companyTags) {
 
     @Override
     public String name() {
@@ -15,7 +15,7 @@ public record ProjectResponse(String name, String description, Set<String> techT
     }
 
     @Override
-    public Set<String> techTags() {
+    public String[] techTags() {
         return techTags;
     }
 

@@ -5,7 +5,7 @@ import java.util.Set;
 public class ProjectRequest {
     private String name;
     private String description;
-    private Set<String> techTags;
+    private String[] techTags;
     private String companyTags;
 
     public String getName() {
@@ -16,7 +16,7 @@ public class ProjectRequest {
         return description;
     }
 
-    public Set<String> getTechTags() {
+    public String[] getTechTags() {
         return techTags;
     }
 
