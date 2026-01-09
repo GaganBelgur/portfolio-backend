@@ -14,6 +14,8 @@ public class ProjectEntity {
     private Long id;
 
     private String name;
+
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     private Set<String> techTags;
