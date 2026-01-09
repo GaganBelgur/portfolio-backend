@@ -3,6 +3,7 @@ package com.gaganbelgur.portfolio.entity;
 import jakarta.persistence.*;
 
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "project")
@@ -15,7 +16,7 @@ public class ProjectEntity {
     private String name;
     private String description;
 
-    private List<String> techTags;
+    private Set<String> techTags;
 
     private String companyTags;
 
@@ -29,7 +30,7 @@ public class ProjectEntity {
         return description;
     }
 
-    public List<String> getTechTags() {
+    public Set<String> getTechTags() {
         return techTags;
     }
 
