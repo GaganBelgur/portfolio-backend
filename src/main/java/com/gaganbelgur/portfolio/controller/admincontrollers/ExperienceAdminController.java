@@ -1,9 +1,11 @@
 package com.gaganbelgur.portfolio.controller.admincontrollers;
 
-import com.gaganbelgur.portfolio.dto.experience.ExperienceRequest;
-import com.gaganbelgur.portfolio.dto.experience.ExperienceResponse;
+import com.gaganbelgur.portfolio.dto.admins.experience.ExperienceAdminResponse;
+import com.gaganbelgur.portfolio.dto.publics.experience.ExperienceRequest;
 import com.gaganbelgur.portfolio.service.ExperienceService;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 @RestController
@@ -16,13 +18,18 @@ public class ExperienceAdminController {
         this.experienceService = experienceService;
     }
 
+    @GetMapping
+    public List<ExperienceAdminResponse> getExperiences() {
+        return experienceService.getAllAdminExperiences();
+    }
+
     @PostMapping
-    public ExperienceResponse createExperience(@RequestBody ExperienceRequest request) {
+    public ExperienceAdminResponse createExperience(@RequestBody ExperienceRequest request) {
         return experienceService.createExperience(request);
     }
 
     @PutMapping("/{id}")
-    public ExperienceResponse updateExperience(@PathVariable Long id, @RequestBody ExperienceRequest request) {
+    public ExperienceAdminResponse updateExperience(@PathVariable Long id, @RequestBody ExperienceRequest request) {
         return experienceService.updateExperience(id, request);
     }
 

@@ -1,6 +1,11 @@
-package com.gaganbelgur.portfolio.dto.experience;
+package com.gaganbelgur.portfolio.dto.admins.experience;
 
-public record ExperienceResponse(String name, String role, String duration, String summary) {
+public record ExperienceAdminResponse(long id, String name, String role, String duration, String summary) {
+    @Override
+    public long id() {
+        return id;
+    }
+
     @Override
     public String name() {
         return name;

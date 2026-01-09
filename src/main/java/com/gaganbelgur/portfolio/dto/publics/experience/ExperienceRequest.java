@@ -1,4 +1,4 @@
-package com.gaganbelgur.portfolio.dto.experience;
+package com.gaganbelgur.portfolio.dto.publics.experience;
 
 public class ExperienceRequest {
     private String name;
