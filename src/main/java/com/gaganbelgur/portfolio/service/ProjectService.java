@@ -1,8 +1,8 @@
 package com.gaganbelgur.portfolio.service;
 
-import com.gaganbelgur.portfolio.dto.admins.ProjectAdminResponse;
-import com.gaganbelgur.portfolio.dto.publics.ProjectRequest;
-import com.gaganbelgur.portfolio.dto.publics.ProjectResponse;
+import com.gaganbelgur.portfolio.dto.response.admins.ProjectAdminResponse;
+import com.gaganbelgur.portfolio.dto.request.ProjectRequest;
+import com.gaganbelgur.portfolio.dto.response.publics.ProjectResponse;
 
 import java.util.List;
 

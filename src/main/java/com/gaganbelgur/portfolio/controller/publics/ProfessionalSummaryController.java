@@ -1,6 +1,6 @@
 package com.gaganbelgur.portfolio.controller.publics;
 
-import com.gaganbelgur.portfolio.dto.publics.ProfessionalSummaryResponse;
+import com.gaganbelgur.portfolio.dto.response.publics.ProfessionalSummaryResponse;
 import com.gaganbelgur.portfolio.service.ProfessionalSummaryService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,5 +20,4 @@ public class ProfessionalSummaryController {
     public ProfessionalSummaryResponse getProfessionalSummary() {
         return service.getProfessionalSummary();
     }
-
 }

@@ -1,6 +1,6 @@
 package com.gaganbelgur.portfolio.controller.publics;
 
-import com.gaganbelgur.portfolio.dto.publics.ProjectResponse;
+import com.gaganbelgur.portfolio.dto.response.publics.ProjectResponse;
 import com.gaganbelgur.portfolio.service.ProjectService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

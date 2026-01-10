@@ -1,6 +1,4 @@
-package com.gaganbelgur.portfolio.dto.publics;
-
-import java.util.Set;
+package com.gaganbelgur.portfolio.dto.request;
 
 public class ProjectRequest {
     private String name;

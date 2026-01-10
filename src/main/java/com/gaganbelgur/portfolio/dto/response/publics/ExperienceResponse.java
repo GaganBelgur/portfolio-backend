@@ -1,4 +1,4 @@
-package com.gaganbelgur.portfolio.dto.publics;
+package com.gaganbelgur.portfolio.dto.response.publics;
 
 public record ExperienceResponse(String name, String role, String duration, String summary) {
     @Override

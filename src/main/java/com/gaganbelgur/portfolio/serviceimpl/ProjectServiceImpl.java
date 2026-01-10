@@ -1,8 +1,8 @@
 package com.gaganbelgur.portfolio.serviceimpl;
 
-import com.gaganbelgur.portfolio.dto.admins.ProjectAdminResponse;
-import com.gaganbelgur.portfolio.dto.publics.ProjectRequest;
-import com.gaganbelgur.portfolio.dto.publics.ProjectResponse;
+import com.gaganbelgur.portfolio.dto.response.admins.ProjectAdminResponse;
+import com.gaganbelgur.portfolio.dto.request.ProjectRequest;
+import com.gaganbelgur.portfolio.dto.response.publics.ProjectResponse;
 import com.gaganbelgur.portfolio.entity.ProjectEntity;
 import com.gaganbelgur.portfolio.repository.ProjectRepository;
 import com.gaganbelgur.portfolio.service.ProjectService;

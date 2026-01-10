@@ -1,7 +1,7 @@
 package com.gaganbelgur.portfolio.controller.admins;
 
-import com.gaganbelgur.portfolio.dto.admins.ExperienceAdminResponse;
-import com.gaganbelgur.portfolio.dto.publics.ExperienceRequest;
+import com.gaganbelgur.portfolio.dto.response.admins.ExperienceAdminResponse;
+import com.gaganbelgur.portfolio.dto.request.ExperienceRequest;
 import com.gaganbelgur.portfolio.service.ExperienceService;
 import org.springframework.web.bind.annotation.*;
 

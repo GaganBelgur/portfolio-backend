@@ -1,8 +1,8 @@
 package com.gaganbelgur.portfolio.serviceimpl;
 
-import com.gaganbelgur.portfolio.dto.admins.ExperienceAdminResponse;
-import com.gaganbelgur.portfolio.dto.publics.ExperienceRequest;
-import com.gaganbelgur.portfolio.dto.publics.ExperienceResponse;
+import com.gaganbelgur.portfolio.dto.response.admins.ExperienceAdminResponse;
+import com.gaganbelgur.portfolio.dto.request.ExperienceRequest;
+import com.gaganbelgur.portfolio.dto.response.publics.ExperienceResponse;
 import com.gaganbelgur.portfolio.entity.ExperienceEntity;
 import com.gaganbelgur.portfolio.repository.ExperienceRepository;
 import com.gaganbelgur.portfolio.service.ExperienceService;

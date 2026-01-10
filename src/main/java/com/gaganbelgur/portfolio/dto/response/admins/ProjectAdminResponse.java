@@ -1,4 +1,4 @@
-package com.gaganbelgur.portfolio.dto.admins;
+package com.gaganbelgur.portfolio.dto.response.admins;
 
 import java.util.Set;
 

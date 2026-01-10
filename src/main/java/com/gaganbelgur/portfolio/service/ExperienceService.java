@@ -1,8 +1,8 @@
 package com.gaganbelgur.portfolio.service;
 
-import com.gaganbelgur.portfolio.dto.admins.ExperienceAdminResponse;
-import com.gaganbelgur.portfolio.dto.publics.ExperienceRequest;
-import com.gaganbelgur.portfolio.dto.publics.ExperienceResponse;
+import com.gaganbelgur.portfolio.dto.response.admins.ExperienceAdminResponse;
+import com.gaganbelgur.portfolio.dto.request.ExperienceRequest;
+import com.gaganbelgur.portfolio.dto.response.publics.ExperienceResponse;
 
 import java.util.List;
 

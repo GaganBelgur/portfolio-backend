@@ -1,6 +1,6 @@
-package com.gaganbelgur.portfolio.dto.publics;
+package com.gaganbelgur.portfolio.dto.response.admins;
 
-public record ProfessionalSummaryResponse(long id, String summary) {
+public record ProfessionalSummaryAdminResponse(long id, String summary) {
 
     @Override
     public long id() {
