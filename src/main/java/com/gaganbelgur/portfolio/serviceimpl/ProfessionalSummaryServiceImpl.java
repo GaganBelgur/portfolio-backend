@@ -6,6 +6,8 @@ import com.gaganbelgur.portfolio.repository.ProfessionalSummaryRepository;
 import com.gaganbelgur.portfolio.service.ProfessionalSummaryService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProfessionalSummaryServiceImpl implements ProfessionalSummaryService {
 
@@ -17,7 +19,13 @@ public class ProfessionalSummaryServiceImpl implements ProfessionalSummaryServic
 
     @Override
     public ProfessionalSummaryResponse getProfessionalSummary() {
-        ProfessionalSummaryEntity entity = repository.findAll().getLast();
-        return new ProfessionalSummaryResponse(entity.getId(), entity.getSummary());
+        List<ProfessionalSummaryEntity> entity = repository.findAll();
+
+        if (entity.isEmpty()) {
+            return new ProfessionalSummaryResponse(-1, null);
+        }
+
+        int entitySize = entity.size();
+        return new ProfessionalSummaryResponse(entity.get(entitySize - 1).getId(), entity.get(entitySize - 1).getSummary());
     }
 }
