@@ -2,7 +2,6 @@ package com.gaganbelgur.portfolio.controller.admins;
 
 import com.gaganbelgur.portfolio.dto.request.ConnectWithMeRequest;
 import com.gaganbelgur.portfolio.dto.response.admins.ConnectWithMeAdminResponse;
-import com.gaganbelgur.portfolio.dto.response.publics.ConnectWithMeResponse;
 import com.gaganbelgur.portfolio.service.ConnectWithMeService;
 import org.springframework.web.bind.annotation.*;
 

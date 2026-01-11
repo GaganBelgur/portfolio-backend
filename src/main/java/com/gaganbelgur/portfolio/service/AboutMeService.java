@@ -4,8 +4,12 @@ import com.gaganbelgur.portfolio.dto.request.AboutMeRequest;
 import com.gaganbelgur.portfolio.dto.response.admins.AboutMeAdminResponse;
 import com.gaganbelgur.portfolio.dto.response.publics.AboutMeResponse;
 
+import java.util.List;
+
 public interface AboutMeService {
     AboutMeResponse getAboutMe();
+
+    List<AboutMeAdminResponse> getAboutMeAdmin();
 
     AboutMeAdminResponse createAboutMe(AboutMeRequest request);
 

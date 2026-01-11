@@ -37,15 +37,7 @@ public class ExperienceServiceImpl implements ExperienceService {
     @Override
     public List<ExperienceAdminResponse> getAllAdminExperiences() {
         List<ExperienceEntity> experiences = experienceRepository.findAll();
-
-        List<ExperienceAdminResponse> responses = new ArrayList<>();
-
-        experiences.forEach(experienceEntity -> {
-            ExperienceAdminResponse response = mapAdmin(experienceEntity);
-            responses.add(response);
-        });
-
-        return responses;
+        return experiences.stream().map(this::mapAdmin).toList();
     }
 
     @Override

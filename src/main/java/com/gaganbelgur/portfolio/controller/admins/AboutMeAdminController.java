@@ -1,12 +1,11 @@
 package com.gaganbelgur.portfolio.controller.admins;
 
 import com.gaganbelgur.portfolio.dto.request.AboutMeRequest;
-import com.gaganbelgur.portfolio.dto.request.ProfessionalSummaryRequest;
 import com.gaganbelgur.portfolio.dto.response.admins.AboutMeAdminResponse;
-import com.gaganbelgur.portfolio.dto.response.admins.ProfessionalSummaryAdminResponse;
 import com.gaganbelgur.portfolio.service.AboutMeService;
-import com.gaganbelgur.portfolio.service.ProfessionalSummaryService;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/admin/about-me")
@@ -15,6 +14,11 @@ public class AboutMeAdminController {
 
     public AboutMeAdminController(AboutMeService service) {
         this.service = service;
+    }
+
+    @GetMapping
+    public List<AboutMeAdminResponse> getAboutMe() {
+        return service.getAboutMeAdmin();
     }
 
     @PostMapping
